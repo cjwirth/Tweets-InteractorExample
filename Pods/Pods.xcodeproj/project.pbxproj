@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043623BA3D005DB2F6648035C89767E7 /* MYOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE9F190DEB828F63DCA15E3A5B2976E /* MYOperators.swift */; };
+		0B88E392122C84C2726A3326C2D86682 /* MYTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00F87CC148BAB86D75A0080F1E9DB79 /* MYTableViewCell.swift */; };
+		0C520FF43F4FF0A89D9DD4EA1277D793 /* Hakuba-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79795C462CCD24EB32FC9085255AE805 /* Hakuba-dummy.m */; };
+		2FA5ADF35BD07347E9FD8F9F84F6D4CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB35A6B64F542A72321516E845EFDCC7 /* Foundation.framework */; };
+		3B956A2B107ACA376B3558D517C4F4D3 /* Pods-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45B8E205745ECB33A1FD4914B5400E69 /* MYSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98798E232A93A2BA32F5A14D7A9CE170 /* MYSection.swift */; };
+		519A10754E01A448A6C3D1E17309A988 /* MYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B380A7F7BCFD64C295ECBFC765ED48 /* MYLabel.swift */; };
+		708EEB262AD8AB75994B8C8E917D45B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB35A6B64F542A72321516E845EFDCC7 /* Foundation.framework */; };
+		A5D05710F6C383287CCEB9EE674DA629 /* MYHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD80815B0ABF2540CD16A2AC93B48748 /* MYHeaderFooterView.swift */; };
+		B463121AA915BF5F671DA97D4806B465 /* MYExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B58FC9DEB89C6AFF3209715EAC9793 /* MYExtension.swift */; };
+		B6D43F8EC28B3459E078A66CAF0D5982 /* Hakuba.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4DEB1D7B99F05B23EB89EDCE59C576D /* Hakuba.swift */; };
+		B81D206A7D48AAC4B3C90B9225483478 /* MYReloadTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA1A2B4E66877082198D293E1D2BAFF /* MYReloadTracker.swift */; };
+		B833CB7D333AE78906C7047C186415CF /* Hakuba-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0636B26B1188559BD5C40147FBFEAB1 /* Hakuba-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE557C203E52DAB266128D3F71137337 /* MYCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68FD0D128A338B6BD0F492B439E22186 /* MYCommon.swift */; };
+		D9EEAD3C417B9AE194F9B97407EBDC6F /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */; };
+		E0385D526D9AC040168F943B18F6CFD2 /* MYViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF36D6DEB5C66A8A36B189DC2E9B229 /* MYViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0FECABDD6288D13787100953B9B56800 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 885F6AD87A0FE5C62DFB3CF5896FB0B0;
+			remoteInfo = Hakuba;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		023981457293FE0A9ABB5E44118ED7E9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE9F190DEB828F63DCA15E3A5B2976E /* MYOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MYOperators.swift; sourceTree = "<group>"; };
+		1DBD282F48FEBC62EFA4373B4F283361 /* Hakuba.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Hakuba.xcconfig; sourceTree = "<group>"; };
+		2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-umbrella.h"; sourceTree = "<group>"; };
+		3EF36D6DEB5C66A8A36B189DC2E9B229 /* MYViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MYViewModel.swift; sourceTree = "<group>"; };
+		68FD0D128A338B6BD0F492B439E22186 /* MYCommon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MYCommon.swift; sourceTree = "<group>"; };
+		79795C462CCD24EB32FC9085255AE805 /* Hakuba-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Hakuba-dummy.m"; sourceTree = "<group>"; };
+		79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Pods.modulemap; sourceTree = "<group>"; };
+		7AFC68F2F29134267CB8CD1861724F3B /* Hakuba.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Hakuba.modulemap; sourceTree = "<group>"; };
+		87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		89081E3F725CC6B58A19CB1D980D4DF6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		93B58FC9DEB89C6AFF3209715EAC9793 /* MYExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MYExtension.swift; sourceTree = "<group>"; };
+		977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		98798E232A93A2BA32F5A14D7A9CE170 /* MYSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MYSection.swift; sourceTree = "<group>"; };
+		A0636B26B1188559BD5C40147FBFEAB1 /* Hakuba-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hakuba-umbrella.h"; sourceTree = "<group>"; };
+		B4DEB1D7B99F05B23EB89EDCE59C576D /* Hakuba.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Hakuba.swift; sourceTree = "<group>"; };
+		B6E447555E45A2EC2B1568032A793573 /* Hakuba-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Hakuba-prefix.pch"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE38AB30E76EBF7F5CFC49E768D944EE /* Hakuba.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Hakuba.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C00F87CC148BAB86D75A0080F1E9DB79 /* MYTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MYTableViewCell.swift; sourceTree = "<group>"; };
+		CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D2B380A7F7BCFD64C295ECBFC765ED48 /* MYLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MYLabel.swift; sourceTree = "<group>"; };
+		DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		DB35A6B64F542A72321516E845EFDCC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DD80815B0ABF2540CD16A2AC93B48748 /* MYHeaderFooterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MYHeaderFooterView.swift; sourceTree = "<group>"; };
+		E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCA1A2B4E66877082198D293E1D2BAFF /* MYReloadTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MYReloadTracker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B09E45FEA5E45AA56B9CDE31A87BABF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				708EEB262AD8AB75994B8C8E917D45B3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A99DFFE33F6B6EB65A514A0CBD2B6839 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FA5ADF35BD07347E9FD8F9F84F6D4CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03D45774AC70E42A97BB47C0AAAB1FCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE38AB30E76EBF7F5CFC49E768D944EE /* Hakuba.framework */,
+				023981457293FE0A9ABB5E44118ED7E9 /* Pods.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1EEA5E4FD96C913415474BE205BC0906 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF77621433BB48BED129E15A36CF6C2F /* Hakuba */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		4711C4C337D87F2F740556497E39C3CA /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				B4DEB1D7B99F05B23EB89EDCE59C576D /* Hakuba.swift */,
+				68FD0D128A338B6BD0F492B439E22186 /* MYCommon.swift */,
+				93B58FC9DEB89C6AFF3209715EAC9793 /* MYExtension.swift */,
+				DD80815B0ABF2540CD16A2AC93B48748 /* MYHeaderFooterView.swift */,
+				D2B380A7F7BCFD64C295ECBFC765ED48 /* MYLabel.swift */,
+				1BE9F190DEB828F63DCA15E3A5B2976E /* MYOperators.swift */,
+				FCA1A2B4E66877082198D293E1D2BAFF /* MYReloadTracker.swift */,
+				98798E232A93A2BA32F5A14D7A9CE170 /* MYSection.swift */,
+				C00F87CC148BAB86D75A0080F1E9DB79 /* MYTableViewCell.swift */,
+				3EF36D6DEB5C66A8A36B189DC2E9B229 /* MYViewModel.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		69EC812396B1E823E533866F4890A0A2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AFC68F2F29134267CB8CD1861724F3B /* Hakuba.modulemap */,
+				1DBD282F48FEBC62EFA4373B4F283361 /* Hakuba.xcconfig */,
+				79795C462CCD24EB32FC9085255AE805 /* Hakuba-dummy.m */,
+				B6E447555E45A2EC2B1568032A793573 /* Hakuba-prefix.pch */,
+				A0636B26B1188559BD5C40147FBFEAB1 /* Hakuba-umbrella.h */,
+				89081E3F725CC6B58A19CB1D980D4DF6 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Tweets/Pods/Target Support Files/Hakuba";
+			sourceTree = "<group>";
+		};
+		73B03D31B309045187A4014477846FF7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DB35A6B64F542A72321516E845EFDCC7 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		75D98FF52E597A11900E131B6C4E1ADA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8446514FBAD26C0E18F24A5715AEF67 /* Info.plist */,
+				79A9DEDC89FE8336BF5FEDAAF75BF7FC /* Pods.modulemap */,
+				D0405803033A2A777B8E4DFA0C1800ED /* Pods-acknowledgements.markdown */,
+				87B213035BAC5F75386F62D3C75D2342 /* Pods-acknowledgements.plist */,
+				894E5DA93A9F359521A89826BE6DA777 /* Pods-dummy.m */,
+				E7F21354943D9F42A70697D5A5EF72E9 /* Pods-frameworks.sh */,
+				CBC0F7C552B739C909B650A0F42F7F38 /* Pods-resources.sh */,
+				2BCC458FDD5F692BBB2BFC64BB5701FC /* Pods-umbrella.h */,
+				977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */,
+				DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				1EEA5E4FD96C913415474BE205BC0906 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				03D45774AC70E42A97BB47C0AAAB1FCD /* Products */,
+				B7B80995527643776607AFFA75B91E24 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B7B80995527643776607AFFA75B91E24 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				75D98FF52E597A11900E131B6C4E1ADA /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73B03D31B309045187A4014477846FF7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF77621433BB48BED129E15A36CF6C2F /* Hakuba */ = {
+			isa = PBXGroup;
+			children = (
+				4711C4C337D87F2F740556497E39C3CA /* Source */,
+				69EC812396B1E823E533866F4890A0A2 /* Support Files */,
+			);
+			name = Hakuba;
+			path = /Users/caesar/Developer/iOS/Hakuba;
+			sourceTree = "<absolute>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7DFF35BBA7D0308F4C8E718657BCE9A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B833CB7D333AE78906C7047C186415CF /* Hakuba-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83A9E7497021E81F6F8E27D7C0310A8E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B956A2B107ACA376B3558D517C4F4D3 /* Pods-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5CC6DB6AC905F939DD654A53FDB73111 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CFB667DF09E8E3399E12C239E1888C46 /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				86EB038F7549A9E864B42405F3B5A4BF /* Sources */,
+				A99DFFE33F6B6EB65A514A0CBD2B6839 /* Frameworks */,
+				83A9E7497021E81F6F8E27D7C0310A8E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0237F8EFB8090C5EF624E4355870795 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = 023981457293FE0A9ABB5E44118ED7E9 /* Pods.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		885F6AD87A0FE5C62DFB3CF5896FB0B0 /* Hakuba */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 914A973C5A8CC9A0C48AAA6265B27AD4 /* Build configuration list for PBXNativeTarget "Hakuba" */;
+			buildPhases = (
+				0701C42D2B7812923F0A051DC4539EF4 /* Sources */,
+				2B09E45FEA5E45AA56B9CDE31A87BABF /* Frameworks */,
+				7DFF35BBA7D0308F4C8E718657BCE9A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hakuba;
+			productName = Hakuba;
+			productReference = BE38AB30E76EBF7F5CFC49E768D944EE /* Hakuba.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 03D45774AC70E42A97BB47C0AAAB1FCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				885F6AD87A0FE5C62DFB3CF5896FB0B0 /* Hakuba */,
+				5CC6DB6AC905F939DD654A53FDB73111 /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0701C42D2B7812923F0A051DC4539EF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C520FF43F4FF0A89D9DD4EA1277D793 /* Hakuba-dummy.m in Sources */,
+				B6D43F8EC28B3459E078A66CAF0D5982 /* Hakuba.swift in Sources */,
+				BE557C203E52DAB266128D3F71137337 /* MYCommon.swift in Sources */,
+				B463121AA915BF5F671DA97D4806B465 /* MYExtension.swift in Sources */,
+				A5D05710F6C383287CCEB9EE674DA629 /* MYHeaderFooterView.swift in Sources */,
+				519A10754E01A448A6C3D1E17309A988 /* MYLabel.swift in Sources */,
+				043623BA3D005DB2F6648035C89767E7 /* MYOperators.swift in Sources */,
+				B81D206A7D48AAC4B3C90B9225483478 /* MYReloadTracker.swift in Sources */,
+				45B8E205745ECB33A1FD4914B5400E69 /* MYSection.swift in Sources */,
+				0B88E392122C84C2726A3326C2D86682 /* MYTableViewCell.swift in Sources */,
+				E0385D526D9AC040168F943B18F6CFD2 /* MYViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86EB038F7549A9E864B42405F3B5A4BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9EEAD3C417B9AE194F9B97407EBDC6F /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0237F8EFB8090C5EF624E4355870795 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Hakuba;
+			target = 885F6AD87A0FE5C62DFB3CF5896FB0B0 /* Hakuba */;
+			targetProxy = 0FECABDD6288D13787100953B9B56800 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4A399747CB64EC3A27F7883FFE382C87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977577C045EDA9D9D1F46E2598D19FC7 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		613BEE0DFC7F420C9DA1987F6A274C20 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DBD282F48FEBC62EFA4373B4F283361 /* Hakuba.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Hakuba/Hakuba-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hakuba/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Hakuba/Hakuba.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Hakuba;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B46B3FEB81DA344001BD3BF00EC3B60C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA312349A49333542E6F4B36B329960E /* Pods.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods/Pods.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF817C3D1B78362BD6A94CB566642781 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DBD282F48FEBC62EFA4373B4F283361 /* Hakuba.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Hakuba/Hakuba-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Hakuba/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Hakuba/Hakuba.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Hakuba;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		914A973C5A8CC9A0C48AAA6265B27AD4 /* Build configuration list for PBXNativeTarget "Hakuba" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				613BEE0DFC7F420C9DA1987F6A274C20 /* Debug */,
+				FF817C3D1B78362BD6A94CB566642781 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CFB667DF09E8E3399E12C239E1888C46 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A399747CB64EC3A27F7883FFE382C87 /* Debug */,
+				B46B3FEB81DA344001BD3BF00EC3B60C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
