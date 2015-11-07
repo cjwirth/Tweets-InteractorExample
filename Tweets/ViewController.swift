@@ -1,23 +1,23 @@
-//
-//  ViewController.swift
-//  Tweets
-//
-//  Created by Caesar Wirth on 11/7/15.
-//  Copyright © 2015 cjwirth. All rights reserved.
-//
-
 import UIKit
+import Hakuba
 
 class ViewController: UIViewController {
 
+    let tableView = UITableView(frame: CGRectZero, style: .Plain)
+    var hakuba: Hakuba!
+
+    let dataSource = ModelProvider()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        tableView.frame = view.bounds
+        view.addSubview(tableView)
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        hakuba = Hakuba(tableView: tableView)
+        hakuba.registerNibForCellClass(TweetTableViewCell)
+
+        let tweets = dataSource.tweets.map(TweetCellModel.init)
+        hakuba[0].append(tweets)
     }
 
 

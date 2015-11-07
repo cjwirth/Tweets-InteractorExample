@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="TweetTableViewCell" customModule="Tweets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qQX-c3-lbc">
+                        <rect key="frame" x="10" y="20" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="F6J-LZ-Hqr"/>
+                            <constraint firstAttribute="height" constant="60" id="Z2x-6n-vCv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIk-al-bDW" userLabel="Username Label">
+                        <rect key="frame" x="80" y="10" width="230" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="kdx-mz-gQ7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWI-gq-4Ig" userLabel="Message Label">
+                        <rect key="frame" x="80" y="30" width="230" height="61.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDM-6J-DAo" userLabel="Retweet Button">
+                        <rect key="frame" x="248" y="69" width="32" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="djP-ny-TQc"/>
+                            <constraint firstAttribute="height" constant="30" id="zZI-a1-HaA"/>
+                        </constraints>
+                        <state key="normal" image="retweet"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11v-9Y-KDI" userLabel="Like Button">
+                        <rect key="frame" x="288" y="69" width="22" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Pw2-KA-a3g"/>
+                            <constraint firstAttribute="width" constant="22" id="v3U-hi-cbn"/>
+                        </constraints>
+                        <state key="normal" image="like"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tIk-al-bDW" firstAttribute="leading" secondItem="qQX-c3-lbc" secondAttribute="trailing" constant="10" id="42i-ae-xVd"/>
+                    <constraint firstAttribute="trailing" secondItem="11v-9Y-KDI" secondAttribute="trailing" constant="10" id="AI3-vL-dPZ"/>
+                    <constraint firstItem="qQX-c3-lbc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HgQ-a6-8pO"/>
+                    <constraint firstAttribute="bottom" secondItem="oWI-gq-4Ig" secondAttribute="bottom" constant="8" id="Hwq-O7-aOa"/>
+                    <constraint firstAttribute="bottom" secondItem="RDM-6J-DAo" secondAttribute="bottom" constant="0.5" id="Ipm-zq-S6l"/>
+                    <constraint firstItem="oWI-gq-4Ig" firstAttribute="leading" secondItem="qQX-c3-lbc" secondAttribute="trailing" constant="10" id="LdK-eT-UsP"/>
+                    <constraint firstAttribute="trailing" secondItem="tIk-al-bDW" secondAttribute="trailing" constant="10" id="TW4-Sb-EcZ"/>
+                    <constraint firstItem="11v-9Y-KDI" firstAttribute="leading" secondItem="RDM-6J-DAo" secondAttribute="trailing" constant="8" id="V9o-sn-IgA"/>
+                    <constraint firstAttribute="bottom" secondItem="11v-9Y-KDI" secondAttribute="bottom" constant="0.5" id="YC1-fM-Dab"/>
+                    <constraint firstItem="oWI-gq-4Ig" firstAttribute="top" secondItem="tIk-al-bDW" secondAttribute="bottom" id="bG4-Hk-jSx"/>
+                    <constraint firstItem="qQX-c3-lbc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xVg-Wp-HTu"/>
+                    <constraint firstItem="tIk-al-bDW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="yx5-Bo-W4v"/>
+                    <constraint firstAttribute="trailing" secondItem="oWI-gq-4Ig" secondAttribute="trailing" constant="10" id="zoQ-AB-Z92"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconView" destination="qQX-c3-lbc" id="1eb-bQ-F55"/>
+                <outlet property="likeButton" destination="11v-9Y-KDI" id="rQo-2r-vp2"/>
+                <outlet property="messageLabel" destination="oWI-gq-4Ig" id="rky-G0-cRR"/>
+                <outlet property="retweetButton" destination="RDM-6J-DAo" id="aE4-yR-wcr"/>
+                <outlet property="usernameLabel" destination="tIk-al-bDW" id="yrh-hr-SWM"/>
+            </connections>
+            <point key="canvasLocation" x="324" y="166"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="like" width="54" height="72"/>
+        <image name="retweet" width="75" height="72"/>
+    </resources>
+</document>

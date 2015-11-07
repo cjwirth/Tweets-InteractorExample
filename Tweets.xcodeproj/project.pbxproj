@@ -16,6 +16,8 @@
 		39A18A0A1BEEA44100239E49 /* tweets.json in Resources */ = {isa = PBXBuildFile; fileRef = 39A18A081BEEA44100239E49 /* tweets.json */; };
 		39A18A0D1BEEA69200239E49 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A18A0C1BEEA69200239E49 /* Models.swift */; };
 		39A18A0F1BEEA6EA00239E49 /* ModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A18A0E1BEEA6EA00239E49 /* ModelProvider.swift */; };
+		39A18A131BEEAF7B00239E49 /* TweetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A18A111BEEAF7B00239E49 /* TweetTableViewCell.swift */; };
+		39A18A141BEEAF7B00239E49 /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 39A18A121BEEAF7B00239E49 /* TweetTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		39A18A081BEEA44100239E49 /* tweets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = tweets.json; path = Resources/tweets.json; sourceTree = "<group>"; };
 		39A18A0C1BEEA69200239E49 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Models.swift; path = Models/Models.swift; sourceTree = "<group>"; };
 		39A18A0E1BEEA6EA00239E49 /* ModelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelProvider.swift; path = Models/ModelProvider.swift; sourceTree = "<group>"; };
+		39A18A111BEEAF7B00239E49 /* TweetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TweetTableViewCell.swift; path = Views/TweetTableViewCell.swift; sourceTree = "<group>"; };
+		39A18A121BEEAF7B00239E49 /* TweetTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TweetTableViewCell.xib; path = Views/TweetTableViewCell.xib; sourceTree = "<group>"; };
 		5F4773246FE2DD15AE74D4BE /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87353E3DB1BD8EB4AF6B79BD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B3EBA1C5180A17553BAA79F3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 		39A189F21BEE9CF000239E49 /* Tweets */ = {
 			isa = PBXGroup;
 			children = (
+				39A18A101BEEAF6100239E49 /* Views */,
 				39A18A071BEEA42B00239E49 /* Resources */,
 				39A18A051BEE9D9E00239E49 /* Models */,
 				39A189F31BEE9CF000239E49 /* AppDelegate.swift */,
@@ -94,6 +99,15 @@
 				39A18A081BEEA44100239E49 /* tweets.json */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		39A18A101BEEAF6100239E49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				39A18A111BEEAF7B00239E49 /* TweetTableViewCell.swift */,
+				39A18A121BEEAF7B00239E49 /* TweetTableViewCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		505EFE86448A5032E93AE677 /* Pods */ = {
@@ -174,6 +188,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39A18A141BEEAF7B00239E49 /* TweetTableViewCell.xib in Resources */,
 				39A189FE1BEE9CF000239E49 /* LaunchScreen.storyboard in Resources */,
 				39A189FB1BEE9CF000239E49 /* Assets.xcassets in Resources */,
 				39A189F91BEE9CF000239E49 /* Main.storyboard in Resources */,
@@ -239,6 +254,7 @@
 				39A18A0D1BEEA69200239E49 /* Models.swift in Sources */,
 				39A189F61BEE9CF000239E49 /* ViewController.swift in Sources */,
 				39A18A0F1BEEA6EA00239E49 /* ModelProvider.swift in Sources */,
+				39A18A131BEEAF7B00239E49 /* TweetTableViewCell.swift in Sources */,
 				39A189F41BEE9CF000239E49 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
