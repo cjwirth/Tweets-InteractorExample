@@ -1,7 +1,7 @@
 import UIKit
 import Hakuba
 
-class ViewController: UIViewController {
+class TweetViewController: UIViewController {
 
     let tableView = UITableView(frame: CGRectZero, style: .Plain)
     var hakuba: Hakuba!

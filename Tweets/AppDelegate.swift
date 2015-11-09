@@ -13,9 +13,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    private func setupAppearance() {
+        UINavigationBar.appearance().barTintColor = .twitterBlue()
+        UINavigationBar.appearance().tintColor = .whiteColor()
+        UINavigationBar.appearance().titleTextAttributes = [
+            NSForegroundColorAttributeName: UIColor.whiteColor()
+        ]
+    }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        setupAppearance()
+
+        let controller = LoginViewController(nibName: "LoginViewController", bundle: nil)
+        let window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window.rootViewController = controller
+        window.makeKeyAndVisible()
+        self.window = window
         return true
     }
 
