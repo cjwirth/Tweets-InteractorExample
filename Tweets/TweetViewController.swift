@@ -1,8 +1,7 @@
 import UIKit
 import Hakuba
 
-//class TweetViewController: UIViewController {
-class TweetViewController: UIViewController, TweetView {
+class TweetViewController: UIViewController {
 
     // Model Data
     let dataSource: ModelProvider
@@ -11,7 +10,14 @@ class TweetViewController: UIViewController, TweetView {
     let tableView = UITableView(frame: CGRectZero, style: .Plain)
     var hakuba: Hakuba!
 
-    var interactor: TweetViewInteractor
+    init(dataSource: ModelProvider) {
+        self.dataSource = dataSource
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,25 +31,13 @@ class TweetViewController: UIViewController, TweetView {
         reloadData()
     }
 
+    // MARK: Table View Management
+
     func reloadData() {
         let tweets = dataSource.tweets.map(toTweetCellModel)
         hakuba[0].reset(tweets).slide()
     }
 
-    func showConfirmationAlert(title: String, message: String, handler: (Void -> Void)) {
-        confirm(self, title: title, message: message, handler: handler)
-    }
-
-    init(interactor: TweetViewInteractor, dataSource: ModelProvider) {
-        self.interactor = interactor
-        self.dataSource = dataSource
-        super.init(nibName: nil, bundle: nil)
-        self.interactor.view = self
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
 
     private func toTweetCellModel(tweet: Tweet) -> TweetCellModel {
         weak var wself = self
@@ -51,9 +45,41 @@ class TweetViewController: UIViewController, TweetView {
         let liked = dataSource.likedTweets.contains(tweet)
         let retweeted = dataSource.retweetedTweets.contains(tweet)
         let model = TweetCellModel(tweet: tweet, retweeted: retweeted, liked: liked)
-        model.didTapLike = { wself?.interactor.likeTweet(tweet, like: !liked) }
-        model.didTapRetweet = { wself?.interactor.retweetTweet(tweet, retweet: !retweeted) }
+        model.didTapLike = {
+            if wself?.dataSource.currentUser == nil {
+                wself?.showConfirmationAlert("Please Login", message: "Cannot like a tweet without logging in!", handler: {
+                    wself?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+                })
+            } else {
+                if liked {
+                    wself?.dataSource.likedTweets.remove(tweet)
+                } else {
+                    wself?.dataSource.likedTweets.insert(tweet)
+                }
+                wself?.reloadData()
+            }
+        }
+        model.didTapRetweet = {
+            if wself?.dataSource.currentUser == nil {
+                wself?.showConfirmationAlert("Please Login", message: "Cannot retweet without logging in!", handler: {
+                    wself?.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+                })
+            } else {
+                if retweeted {
+                    wself?.dataSource.retweetedTweets.remove(tweet)
+                } else {
+                    wself?.dataSource.retweetedTweets.insert(tweet)
+                }
+                wself?.reloadData()
+            }
+        }
         return model
+    }
+
+    // MARK: View Presentation
+
+    func showConfirmationAlert(title: String, message: String, handler: (Void -> Void)) {
+        confirm(self, title: title, message: message, handler: handler)
     }
 
 }

@@ -10,8 +10,9 @@ class LoginViewController: UIViewController {
         if let user = models.users[inputName] {
             models.currentUser = user
 
-            let interactor = TweetViewStandardInteractor(dataSource: models)
-            let controller = TweetViewController(interactor: interactor, dataSource: models)
+//            let interactor = TweetViewStandardInteractor(dataSource: models)
+//            let controller = TweetViewController(interactor: interactor, dataSource: models)
+            let controller = TweetViewController(dataSource: models)
             controller.title = "\(user.name)'s Feed"
             controller.navigationItem.leftBarButtonItem = BarButtonItem.create("Logout", handler: { _ in
                 self.models.currentUser = nil
@@ -27,8 +28,9 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func previewButtonWasTapped() {
-        let interactor = TweetViewLoggedOutInteractor(loginController: self)
-        let controller = TweetViewController(interactor: interactor, dataSource: models)
+//        let interactor = TweetViewLoggedOutInteractor(loginController: self)
+//        let controller = TweetViewController(interactor: interactor, dataSource: models)
+        let controller = TweetViewController(dataSource: models)
         controller.title = "Preview"
         controller.navigationItem.leftBarButtonItem = BarButtonItem.create("Login", handler: { _ in
             self.dismissViewControllerAnimated(true, completion: nil)
