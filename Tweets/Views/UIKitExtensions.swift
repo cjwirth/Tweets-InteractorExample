@@ -7,6 +7,14 @@ func alert(vc: UIViewController, title: String?, message: String?) -> UIAlertCon
     return controller
 }
 
+func confirm(vc: UIViewController, title: String?, message: String?, handler: (Void -> Void)) -> UIAlertController {
+    let controller = UIAlertController(title: title, message: message, preferredStyle: .Alert)
+    controller.addAction(UIAlertAction(title: "OK", style: .Default, handler: { _ in handler() }))
+    controller.addAction(UIAlertAction(title: "Cancel", style: .Cancel, handler: nil))
+    vc.presentViewController(controller, animated: true, completion: nil)
+    return controller
+}
+
 class BarButtonItem: UIBarButtonItem {
     var tapHandler: (BarButtonItem -> Void)?
 

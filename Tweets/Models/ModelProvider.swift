@@ -22,6 +22,30 @@ class ModelProvider {
     let users: [String: User]
     let tweets: [Tweet]
 
+    var likedTweets = Set<Tweet>()
+    var retweetedTweets = Set<Tweet>()
+
+    var currentUser: User? {
+        willSet {
+            if let user = currentUser {
+                userLikedTweets[user] = likedTweets
+                userRetweets[user] = retweetedTweets
+            }
+        }
+        didSet {
+            if let user = currentUser {
+                likedTweets = userLikedTweets[user] ?? []
+                retweetedTweets = userRetweets[user] ?? []
+            } else {
+                likedTweets = []
+                retweetedTweets = []
+            }
+        }
+    }
+
+    private var userLikedTweets = [User: Set<Tweet>]()
+    private var userRetweets = [User: Set<Tweet>]()
+
     init() {
         let loadedTweets = loadTweets()
         var loadedUsers = [String: User]()

@@ -11,12 +11,12 @@ class TweetCellModel: MYCellModel {
     var didTapRetweet: (Void -> Void)?
     var didTapLike: (Void -> Void)?
 
-    init(tweet: Tweet) {//, retweeted: Bool = false, liked: Bool = false) {
+    init(tweet: Tweet, retweeted: Bool = false, liked: Bool = false) {
         name = tweet.author.name
         message = tweet.message
         image = tweet.author.image
-        self.retweeted = false//retweeted
-        self.liked = false//liked
+        self.retweeted = retweeted
+        self.liked = liked
         super.init(cell: TweetTableViewCell.self, height: 100)
     }
 }
@@ -28,6 +28,9 @@ class TweetTableViewCell: MYTableViewCell {
     @IBOutlet var messageLabel: UILabel!
     @IBOutlet var retweetButton: UIButton!
     @IBOutlet var likeButton: UIButton!
+
+    var didTapRetweet: (Void -> Void)?
+    var didTapLike: (Void -> Void)?
 
     override func configureCell(cellModel: MYCellModel) {
         super.configureCell(cellModel)
@@ -42,5 +45,15 @@ class TweetTableViewCell: MYTableViewCell {
         messageLabel.text = model.message
         retweetButton.setImage(retweetImage, forState: .Normal)
         likeButton.setImage(likeImage, forState: .Normal)
+        didTapRetweet = model.didTapRetweet
+        didTapLike = model.didTapLike
+    }
+
+    @IBAction func retweetButtonTapped() {
+        didTapRetweet?()
+    }
+
+    @IBAction func likeButtonTapped() {
+        didTapLike?()
     }
 }

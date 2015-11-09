@@ -25,8 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         setupAppearance()
 
         let controller = LoginViewController(nibName: "LoginViewController", bundle: nil)
+
+        let navControl = UINavigationController(rootViewController: controller)
+        navControl.navigationBarHidden = true
+
         let window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window.rootViewController = controller
+        window.rootViewController = navControl
         window.makeKeyAndVisible()
         self.window = window
         return true

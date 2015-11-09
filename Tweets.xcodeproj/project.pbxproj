@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0CC6A5C423C54FEB90F1F37A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4773246FE2DD15AE74D4BE /* Pods.framework */; };
+		3996CBB11BF0C36800E7AAB8 /* TweetViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3996CBB01BF0C36800E7AAB8 /* TweetViewInteractor.swift */; };
 		39A189F41BEE9CF000239E49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A189F31BEE9CF000239E49 /* AppDelegate.swift */; };
 		39A189F61BEE9CF000239E49 /* TweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A189F51BEE9CF000239E49 /* TweetViewController.swift */; };
 		39A189FB1BEE9CF000239E49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39A189FA1BEE9CF000239E49 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3996CBB01BF0C36800E7AAB8 /* TweetViewInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TweetViewInteractor.swift; path = Interactors/TweetViewInteractor.swift; sourceTree = "<group>"; };
 		39A189F01BEE9CF000239E49 /* Tweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39A189F31BEE9CF000239E49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39A189F51BEE9CF000239E49 /* TweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3996CBAF1BF0C35100E7AAB8 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				3996CBB01BF0C36800E7AAB8 /* TweetViewInteractor.swift */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
 		39A189E71BEE9CF000239E49 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		39A189F21BEE9CF000239E49 /* Tweets */ = {
 			isa = PBXGroup;
 			children = (
+				3996CBAF1BF0C35100E7AAB8 /* Interactors */,
 				39EB54FE1BF0780400B0BD00 /* Controllers */,
 				39A18A101BEEAF6100239E49 /* Views */,
 				39A18A071BEEA42B00239E49 /* Resources */,
@@ -268,6 +279,7 @@
 				39EB55001BF0782500B0BD00 /* LoginViewController.swift in Sources */,
 				39A18A0D1BEEA69200239E49 /* Models.swift in Sources */,
 				39A189F61BEE9CF000239E49 /* TweetViewController.swift in Sources */,
+				3996CBB11BF0C36800E7AAB8 /* TweetViewInteractor.swift in Sources */,
 				39A18A0F1BEEA6EA00239E49 /* ModelProvider.swift in Sources */,
 				39A18A131BEEAF7B00239E49 /* TweetTableViewCell.swift in Sources */,
 				39EB55041BF0A66800B0BD00 /* UIKitExtensions.swift in Sources */,
