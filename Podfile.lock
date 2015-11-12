@@ -2,11 +2,7 @@ PODS:
   - Hakuba (1.3.1)
 
 DEPENDENCIES:
-  - Hakuba (from `~/Developer/iOS/Hakuba`)
-
-EXTERNAL SOURCES:
-  Hakuba:
-    :path: ~/Developer/iOS/Hakuba
+  - Hakuba
 
 SPEC CHECKSUMS:
   Hakuba: 76656e5716e755f2bc093aabd0f5c7373d3555d0
